@@ -6,7 +6,7 @@ import numpy as np
 
 def get_na_triple_gaussian_fit():
     """Calculate numerical aperture based on measured power upon angle."""
-    angle, amplitude = read_data('pomiar.txt')
+    angle, amplitude = read_data('measurement_data.txt')
 
     angle_min, angle_max, angle_center, center_width, min_ampl, max_ampl = get_data_parameters(
         angle, amplitude)
